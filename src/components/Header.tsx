@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-2">
             <Stethoscope className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">MediAI Diagnostic</span>
+            <span className="text-xl font-bold text-foreground">DiagMind.AI</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">

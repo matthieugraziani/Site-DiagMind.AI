@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Stethoscope className="h-8 w-8 text-accent" />
-              <span className="text-xl font-bold">MediAI Diagnostic</span>
+              <span className="text-xl font-bold">DiagMind.AI</span>
             </div>
             <p className="text-background/80 leading-relaxed">
               Solution d'intelligence artificielle pour l'aide au diagnostic en imagerie médicale.
@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="space-y-3 text-background/80">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>contact@mediai-diagnostic.fr</span>
+                <span>contact@diagmind.ai</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
@@ -57,7 +57,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-background/60">
-              © 2024 MediAI Diagnostic. Tous droits réservés.
+              © 2024 DiagMind.AI. Tous droits réservés.
             </div>
             <div className="flex space-x-6 text-background/60">
               <a href="#" className="hover:text-accent transition-colors">Politique de confidentialité</a>
