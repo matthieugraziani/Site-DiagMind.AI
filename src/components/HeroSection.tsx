@@ -1,6 +1,5 @@
-import { Upload, ArrowRight, Brain, Shield } from "lucide-react";
+import { ArrowRight, Brain, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/medical-hero.jpg";
 
 const HeroSection = () => {
@@ -13,74 +12,51 @@ const HeroSection = () => {
       />
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Diagnostic médical
-                <span className="block text-accent">assisté par IA</span>
+                DiagMind.AI
+                <span className="block text-accent">Innovation en santé</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-                Révolutionnez vos diagnostics en imagerie médicale grâce à l'intelligence artificielle de pointe
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+                Pionniers de l'intelligence artificielle appliquée à l'imagerie médicale
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="accent" size="lg" className="group">
-                <Upload className="mr-2 h-5 w-5" />
-                Analyser une image
+                Découvrir notre mission
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-                Découvrir nos services
+                Notre expertise
               </Button>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 pt-8">
-              <div className="flex items-center space-x-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 max-w-2xl mx-auto">
+              <div className="flex flex-col items-center space-y-3">
                 <Brain className="h-8 w-8 text-accent" />
-                <div>
-                  <div className="font-semibold">IA Avancée</div>
-                  <div className="text-white/80 text-sm">Algorithmes de pointe</div>
+                <div className="text-center">
+                  <div className="font-semibold">Innovation</div>
+                  <div className="text-white/80 text-sm">Recherche de pointe</div>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex flex-col items-center space-y-3">
                 <Shield className="h-8 w-8 text-accent" />
-                <div>
-                  <div className="font-semibold">Sécurisé</div>
-                  <div className="text-white/80 text-sm">Données protégées</div>
+                <div className="text-center">
+                  <div className="font-semibold">Excellence</div>
+                  <div className="text-white/80 text-sm">Standards élevés</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center space-y-3">
+                <Brain className="h-8 w-8 text-accent" />
+                <div className="text-center">
+                  <div className="font-semibold">Vision</div>
+                  <div className="text-white/80 text-sm">Futur de la santé</div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="hidden lg:block">
-            <Card className="p-8 bg-white/95 backdrop-blur shadow-card-medical">
-              <div className="space-y-6">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">
-                    Uploadez votre image médicale
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Formats supportés: DICOM, JPG, PNG
-                  </p>
-                </div>
-                
-                <div className="border-2 border-dashed border-border rounded-lg p-12 text-center hover:border-primary/50 transition-colors cursor-pointer">
-                  <Upload className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                  <p className="text-muted-foreground">
-                    Glissez-déposez votre fichier ici ou
-                  </p>
-                  <Button variant="link" className="p-0 h-auto font-semibold">
-                    cliquez pour sélectionner
-                  </Button>
-                </div>
-
-                <Button className="w-full" size="lg" variant="medical">
-                  Commencer l'analyse
-                </Button>
-              </div>
-            </Card>
           </div>
         </div>
       </div>
